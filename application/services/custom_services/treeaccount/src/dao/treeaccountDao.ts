@@ -164,7 +164,7 @@ public async GpCreate(treeaccountData, callback){
     new CustomLogger().showLogger('info', 'Enter into treeaccountDao.ts: GpCreate');
 
     
-                        if(treeaccountData.id == null || treeaccount.id == undefined || treeaccount.id == ''){
+                        if(treeaccountData.id == null || treeaccountData.id == undefined || treeaccountData.id == ''){
                             treeaccountData['id'] = Math.random().toString(36).slice(-6);
                         }let temp = new treeaccountModel(treeaccountData);
 

@@ -1,5 +1,5 @@
 import * as mongoose from 'mongoose';
-import { treeaccountSchema } from './models/daomodels/ticket';
+import { treeaccountSchema } from './models/daomodels/treeaccount';
 import { seedTree } from './assets/seedTree';
 
 const treeaccountModel = mongoose.model('treeaccount', treeaccountSchema);

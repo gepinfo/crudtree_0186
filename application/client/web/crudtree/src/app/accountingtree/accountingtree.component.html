@@ -12,15 +12,15 @@
 
         <!--(click)="open(node)"-->&nbsp;&nbsp; <a (click)="GpTreeRoute(node)"><i class="fa fa-plus" aria-hidden="true"></i></a> &nbsp;&nbsp;
         <a
-        *ngIf="!node.isDisabled" (click)="GpRoute(node)"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+        *ngIf="!node.isDisabled" (click)="GpRoute(node.origin.object._id)"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>
             </a> <a class="folder-delete" *ngIf="!node.isDisabled" (click)="delete(node)"><i class="fa fa-trash" aria-hidden="true"></i></a>
 
             </span>
             </span>
-            <nz-tree-node *nzTreeNodeDef="let node; when: hasNoContent" nzTreeNodeIndentLine>
-                <input nz-input placeholder="Input node name" nzSize="small" #inputElement
-                />&nbsp;
-                <button nz-button nzSize="small" (click)="saveNode(node, inputElement.value)">Add</button>
-            </nz-tree-node>
+            <!-- <nz-tree-node *nzTreeNodeDef="let node; when: hasNoContent" nzTreeNodeIndentLine>
+                    <input nz-input placeholder="Input node name" nzSize="small" #inputElement />
+                    &nbsp;
+                    <button nz-button nzSize="small" (click)="saveNode(node, inputElement.value)">Add</button>
+                </nz-tree-node> -->
     </ng-template>
 </div>

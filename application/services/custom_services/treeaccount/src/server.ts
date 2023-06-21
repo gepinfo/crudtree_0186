@@ -42,12 +42,12 @@ class App {
 
     private DBSetup(): void {
         // mongoose.Promise = global.Promise;
-        mongoose.connect(this.DB_Url, { useNewUrlParser: true, useUnifiedTopology: true })
+        mongoose.connect(this.DB_Url)
             .then(res => { 
                 console.log('mongodb connected');
                 
                 let seed = new Seed();
-                seed.create();
+                seed.createTree();
 
             })
             .catch(err => { console.log('mongo error in connection:', err) });
