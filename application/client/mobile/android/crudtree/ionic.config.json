@@ -1,0 +1,7 @@
+{
+  "name": "crudtree",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
